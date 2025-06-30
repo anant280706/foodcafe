@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     </head>
         <body>
-         
+        
 <div class="topbar">
     <div class="left">
  <span>Follow On:</span>
@@ -29,12 +29,11 @@
               <option>German</option>
         </select>
       </div>
-    <label for="login">LOGIN</label>
+    <label onclick="modelopen()">LOGIN</label>
     </div>
 </div>
- <div class="login-panel">
-    <!-- Close Button -->
-    <label for="login" class="close-btn">&times;</label>
+ <div class="login-panel" id="openi">
+     <label class="close-btn" onclick="modelclose()">&times;</label>
     
     <h2>LOGIN</h2>
     
@@ -104,6 +103,18 @@
 
 
    <script>
+
+function modelopen(){
+  document.getElementById('openi').style.width="400px"
+}
+function modelclose(){
+  document.getElementById('openi').style.width="0px"
+}
+
+
+
+
+
    const images = ["food5.jpg", "food7.jpg", "food6.avif"];
 let currentIndex = 0;
 
@@ -270,7 +281,7 @@ function abc(item){
 </div>
 </div>
 
-    <input type="checkbox" id="login">
+   
 </div>
  <div class="co_mouse">
   <div class="co_main">
