@@ -73,15 +73,24 @@
       cursor: pointer;
     }
      login {
-      display: none;
-    }
+    
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.5px;
+    text-align: center;
+    cursor: pointer;
+}
+    
 
     /* Overlay form container */
     .login-panel {
+      
       position: fixed;
       top: 0;
-      right: -100%;
-      width: 30%;
+      right: 0;
+      width: 0px;
       height: 100vh;
       background: white;
       padding: 40px 30px;
@@ -90,10 +99,7 @@
       z-index: 999;
     }
 
-    /* Show panel when checkbox is checked */
-    #login:checked ~ .login-panel {
-      right: 0;
-    }
+ 
 
     /* Close button */
     .close-btn {
